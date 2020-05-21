@@ -15,6 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
+        'id',
         'name', 'email', 'password',
     ];
 
@@ -26,4 +27,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function varios_dispositivos()
+    {
+        return $this->hasMany('CJPTELECOM\Dispositivos', 'user_id', 'id');
+    }
 }
