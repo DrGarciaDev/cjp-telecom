@@ -18,3 +18,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('crear-dispositivo', 	'DispositivosController@create')->name('crear-dispositivo');
+Route::resource('guardar-dispositivo', 	'DispositivosController');

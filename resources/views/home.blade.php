@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+                <div class="panel-heading">Dashboard CJP TELECOM</div>
 
                 <div class="panel-body">
                     @if (session('status'))
@@ -14,7 +14,8 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    Has iniciado sesión, ahora puedes: 
+                    <a href="{{ route('crear-dispositivo') }}" class="btn btn-primary">Crear Dispositivo</a>
                 </div>
             </div>
         </div>
